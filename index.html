@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Playlist Creator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender;
+      color: black;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+    input, button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+    }
+    .song-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .delete-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create a Spotify Playlist</h1>
+    <input type="text" id="playlistName" placeholder="Playlist Name" required>
+    <div id="songs">
+      <div class="song-item">
+        <input type="text" placeholder="Song Name">
+        <input type="number" placeholder="Times">
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+    <button id="addSong">Add Song</button>
+    <button id="createPlaylist">Create Playlist</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
