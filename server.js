@@ -21,7 +21,7 @@ passport.use(
     {
       clientID: '85eed00a3ba941ffb7e13a9a815d3a61',
       clientSecret: 'f703a0615fef45c8b88250cd3dc32422',
-      callbackURL: 'http://localhost:8000/auth/spotify/callback',
+      callbackURL: 'http://localhost:3000/auth/spotify/callback',
     },
     function (accessToken, refreshToken, expires_in, profile, done) {
       return done(null, { accessToken, profile });
